@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="This App Belongs to Ayush Sharma"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/enterTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter Temperature"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/cToF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="CELCIUS TO FAHRENHITE"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/fToC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAHRENHITE TO CELCIUS"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:text="0 Degree"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"/>
+</LinearLayout>
